@@ -14,7 +14,7 @@ const server = micro(async (req, res) => {
 
   const context: { status?: number } = {};
   const app = (
-    <StaticRouter context={{}} location={req.url}>
+    <StaticRouter context={context} location={req.url}>
       <App />
     </StaticRouter>
   );
