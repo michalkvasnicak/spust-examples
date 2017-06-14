@@ -1,0 +1,41 @@
+{
+  "name": "spust-examples",
+  "version": "1.0.0",
+  "author": "Michal Kvasničák",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-runtime": "^6.23.0",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-config-react-app": "^1.0.4",
+    "eslint-plugin-prettier": "^2.1.2",
+    "flow-bin": "^0.48.0",
+    "lint-staged": "^3.6.1",
+    "pre-commit": "^1.2.2",
+    "prettier": "^1.4.4",
+    "spust": "^0.6.1"
+  },
+  "dependencies": {
+    "apollo-client": "^1.4.2",
+    "micro": "^7.3.3",
+    "react": "^15.6.0",
+    "react-dom": "^15.6.0",
+    "react-router-dom": "^4.1.1"
+  },
+  "pre-commit": "lint-staged",
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "lint-staged": "lint-staged",
+    "lint": "eslint src",
+    "format": "eslint --fix src",
+    "flow": "flow check",
+    "build": "spust build",
+    "start": "spust start"
+  }
+}
