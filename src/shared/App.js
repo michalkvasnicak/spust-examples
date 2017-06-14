@@ -14,7 +14,15 @@ export default function App({ children }: { children?: any }) {
       <Switch>
         <Route exact path="/" render={() => <Homepage />} />
         <Route path="/projects/:id" render={({ match }) => <Project id={match.params.id} />} />
-        <Route render={() => <NotFound />} />
+        <Route
+          render={({ staticContext }) => {
+            if (staticContext) {
+              staticContext.status = 404;
+            }
+
+            return <NotFound />;
+          }}
+        />
       </Switch>
     </div>
   );
