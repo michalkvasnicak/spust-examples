@@ -5,6 +5,7 @@ import micro, { send } from 'micro';
 import React from 'react';
 import { assets } from 'spust';
 import { renderToString } from 'react-dom/server';
+import type { StaticRouterContext } from 'react-router';
 import { StaticRouter } from 'react-router-dom';
 
 import App from '../shared/App';
@@ -12,7 +13,7 @@ import App from '../shared/App';
 const server = micro(async (req, res) => {
   const { css, js } = assets();
 
-  const context: { status?: number } = {};
+  const context: StaticRouterContext = {};
   const app = (
     <StaticRouter context={context} location={req.url}>
       <App />
