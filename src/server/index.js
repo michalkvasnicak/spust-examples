@@ -30,7 +30,7 @@ const server = micro(async (req, res) => {
       </head>
       <body>
         <div id="app">${html}</div>
-        ${js.map(src => `<script src="${src}" />`).join('\n')}
+        ${js.map(src => `<script src="${src}"></script>`).join('\n')}
       </body>
     </html>
   `;
