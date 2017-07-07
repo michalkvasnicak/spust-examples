@@ -12,7 +12,7 @@ This repository contains example [Spust](https://github.com/michalkvasnicak/spus
 
 ## Example projects
 
-[Client side only React application](./client-side-only-react-app)
-[GraphQL server using spust-koa](./graphql-server-spust-koa)
-[Universal React application using Micro](./universal-react-app-micro)
-[Universal React application using spust-koa](./universal-react-app-spust-koa)
+* [Client side only React application](./client-side-only-react-app)
+* [GraphQL server using spust-koa](./graphql-server-spust-koa)
+* [Universal React application using Micro](./universal-react-app-micro)
+* [Universal React application using spust-koa](./universal-react-app-spust-koa)
