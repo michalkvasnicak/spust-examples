@@ -16,7 +16,19 @@
     "spust-koa": "^0.3.0"
   },
   "lint-staged": {
-    "src/**/*.js": [
+    "client-side-only-react-app/src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "graphql-server-spust-koa/src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "universal-react-app-micro/src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "universal-react-app-spust-koa/src/**/*.js": [
       "eslint --fix",
       "git add"
     ]
