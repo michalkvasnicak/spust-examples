@@ -1,15 +1,3 @@
 {
-  "extends": ["react-app", "prettier"],
-  "plugins": ["prettier"],
-  "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "all",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 2
-      }
-    ]
-  }
+  "extends": ["atoto"]
 }

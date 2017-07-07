@@ -5,7 +5,8 @@
 [include]
 
 [libs]
-./node_modules/spust/flow-typed/
+node_modules/spust/flow-typed
+node_modules/spust-koa/flow-typed
 
 [options]
 

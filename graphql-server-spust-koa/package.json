@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "../node_modules/.bin/spust build",
+    "start": "../node_modules/.bin/spust start"
+  },
+  "dependencies": {
+    "graphql": "^0.10.3",
+    "graphql-server-koa": "^1.0.0",
+    "graphql-tools": "^1.1.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "spust-koa": "^0.3.0"
+  }
+}

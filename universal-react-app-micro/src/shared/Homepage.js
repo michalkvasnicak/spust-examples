@@ -8,8 +8,12 @@ export default function Homepage() {
     <div>
       <h1>Homepage</h1>
       <ul>
-        <li><Link to="/projects/abcde">Project abcde</Link></li>
-        <li><Link to="/projects/abcdef">Project abcdef</Link></li>
+        <li>
+          <Link to="/projects/abcde">Project abcde</Link>
+        </li>
+        <li>
+          <Link to="/projects/abcdef">Project abcdef</Link>
+        </li>
       </ul>
     </div>
   );

@@ -8,7 +8,7 @@ import Homepage from './Homepage';
 import NotFound from './NotFound';
 import Project from './Project';
 
-export default function App({ children }: { children?: any }) {
+export default function App() {
   return (
     <div>
       <Switch>
@@ -17,6 +17,7 @@ export default function App({ children }: { children?: any }) {
         <Route
           render={({ staticContext }) => {
             if (staticContext) {
+              // eslint-disable-next-line
               staticContext.status = 404;
             }
 

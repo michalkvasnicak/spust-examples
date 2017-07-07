@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "../node_modules/.bin/spust build",
+    "start": "../node_modules/.bin/spust start"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "spust-koa": "^0.3.0"
+  }
+}
